@@ -1,0 +1,387 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif);
+
+@font-face {
+    font-family: 'xilosa';
+    src: url('xilosa_.eot'), 
+    url('xilosa_.ttf') format('truetype'), url('xilosa_.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: "Bangers", monospace;
+  font-size: 60px;
+  text-align: center;
+  background-image: url("https://user-images.githubusercontent.com/84053584/142950938-c0dffbc4-a020-4e87-932a-0cfa4808452d.jpg");
+  background-color: #000000;
+  background-size: 110%;
+  background-position: 20% 0%;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+}
+
+.page-title
+{
+  font-family: "xilosa", monospace;
+  font-size: 120px;
+  text-align: center;
+  text-shadow: -10px -1px 0 #FFF176, 1px -1px 0 #FFF176, -1px 1px 0 #FFF176, 1px 1px 0 #FFF176;
+  color: #B71C1C;
+  margin: 0;
+}
+
+.titleChapeu
+{
+  font-family: "xilosa";
+  font-size: 120px;
+  text-align: center;
+  text-shadow: -10px -1px 0 #FFF176, 1px -1px 0 #FFF176, -1px 1px 0 #FFF176, 1px 1px 0 #FFF176;
+  color: #B71C1C;
+  margin: 0;
+}
+
+.page-titleDiv
+{
+  margin: 30px;
+}
+
+.boxes
+{
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  padding: 15px;
+  max-width: 80%;
+}
+
+#simulacao
+{
+  display: block;
+}
+
+#listaPedidos
+{
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  margin-top: 15px;
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  padding: 30px;
+}
+
+.qtd
+{ 
+  font-size: 25px;
+  background-color: #d9d9d9;
+  margin: 0 5px;
+  padding: 10px 15px;
+}
+
+.alterQtd
+{
+  display: flex;
+  margin-right: 15px;
+}
+
+.espaco
+{
+  width: 200px;
+}
+
+.tipo
+{
+  font-size: 50px;
+  display: flex;
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  margin-top: 15px;
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+}
+
+.tipo_body
+{
+  width: 100%;
+}
+
+.tipo_head
+{ 
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.tipo-nome
+{
+  display:flex;
+  align-items: center;
+  width: 100%;
+}
+
+.buttonToggle {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 100%;
+  border-style: none;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  height: 50px;
+  width: 50px;
+  max-width: 100%;
+  padding: 15px 15px;
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+}
+
+.buttonToggle:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.buttonAdd {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 100%;
+  border-style: none;
+  color: #3c4043;
+  cursor: pointer; 
+  display: inline-flex;
+  fill: currentcolor;
+  height: 50px;
+  width: 50px;
+  max-width: 100%;
+  padding: 15px 15px;
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+}
+
+.buttonAdd:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.listaDeItens
+{
+  display: none;
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.item 
+{ 
+  font-size: 25px;
+  align-items: start;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.item-body
+{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.item-nome
+{
+  text-align: left;
+  width: 100%;
+}
+
+.preco
+{ 
+  font-size: 25px;
+  background-color: #d9d9d9;
+  width: 30%;
+  margin-right: 15px;
+  max-width: 200px;
+}
+
+.ingredientes
+{
+  text-align: left;
+  color: grey;
+  margin-bottom: 15px;
+  font-size: 15px;
+  width: 50%;
+}
+
+.food-images
+{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  max-width:15%;
+  max-height:100%;
+  object-fit: cover;
+}
+
+.simularButton {
+  font-family: "Bangers";
+  font-size: 25px;
+  margin: 0 0 15px 70%;
+  align-items: center; 
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 5px 15px;
+  height: 45px;
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+}
+
+.simularButton:hover {
+  background: #F6F9FE;
+  color: #B71C1C; 
+}
+
+.inNumber
+{
+  display: inline-flex;
+  font-size: 35px;
+  align-items: center; 
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  color: #3c4043;
+  cursor: pointer;
+  padding: 5px 15px;
+  margin: 0px 30px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+}
+
+
+.value-button {
+  align-items: center; 
+  border-style: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input[type=number]{
+  text-align: center;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*Versão mobile*/
+@media (max-width: 1000px)
+{
+  
+  body{
+    font-size: 40px;
+  }
+  
+  .page-title
+  {
+    font-size: 60px;
+  }
+  
+  .titleChapeu
+  {
+    font-size: 60px;
+  }
+
+  .tipo
+  {
+    font-size: 30px;
+  }
+  
+  .tipo_head
+  {
+    padding: 15px;
+  }
+  
+  .item 
+  { 
+    font-size: 20px;
+  }
+  
+  .item-nome
+  {
+    margin-right: 2px;
+  }
+  
+  .ingredientes
+  {
+    font-size: 12px;
+  }
+  
+  .preco
+  {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  
+  .buttonToggle
+  {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .listaDeItens
+  {
+    padding-left: 10px;
+  }
+  
+  .simularButton
+  {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  
+  .buttonAdd
+  {
+    height: 40px;
+    width: 40px;
+  }
+  
+  #listaPedidos
+  {
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 10px;
+  }
+  
+  .inNumber
+  {
+    font-size: 15px;
+    height: 25px;
+    padding: 3px 10px;
+    margin: 0 1px;
+  }
+  
+  input[type=number]
+  {
+    width: 20px;
+    height: 25px;
+  }
+  
+  .espaco
+  {
+    width: 100px;
+  }
+  
+}
